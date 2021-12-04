@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체데이터</title>
+</head>
+<body>
+    <script>
+        // 객체 데이터
+        const singer = {
+            name : 'Lady Gaga',
+            age : 35,
+
+            //메소드(Method) : 속성 부분에 함수가 할당 되어있는 상태
+            //getName 메소드이다
+            getName : function (){
+                return this.name;
+            }
+        };
+
+        const hisName = singer.getName(); //singer안에 getName()메소드를 호출(실행)해서 hisName에 할당(저장)해라
+        console.log(hisName); //출력
+        //혹은 꼭 변수를 선언해서 출력할 필요는 없고 아래 코드처럼 출력할 수 있다
+        console.log(singer.getName());
+</script>
+</body>
+</html>

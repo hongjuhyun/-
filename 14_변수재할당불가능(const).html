@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수재할당불가능</title>
+</head>
+<body>
+    <script>
+        //값(데이터)의 재할당 불가능!
+
+        const a = 12;
+        console.log(a); //12
+
+        a = 999;
+        console.log(a); //Uncaught TypeError: Assignment to constant variable.
+
+
+        //정리
+        // 평상시에는 const 사용하고 재할당이 필요할때만 let을 사용하는게 좋다.
+    </script>
+</body>
+</html>

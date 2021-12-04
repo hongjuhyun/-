@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수함수</title>
+</head>
+<body>
+    <script>
+        //함수 선언
+        function sum(a, b){ //a와 b는 매개변수(Parameters)
+            return a + b;
+        }
+
+        //재사용!
+        let a = sum(1, 2); //1과 2는 인수 (Arguments)
+        let b = sum(7, 12); //인수는 숫자 뿐만 아니라 앞에서 배운 문자, 불린, 언디파인, 널 등 자료형을 사용할 수 있다.
+        let c = sum(2, 4);
+
+        console.log(a, b, c); //3, 19, 6
+    </script>
+</body>
+</html>
